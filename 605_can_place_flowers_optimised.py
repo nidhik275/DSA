@@ -1,6 +1,10 @@
 class Solution:
     def canPlaceFlowers(self, flowerbed: list[int], n: int) -> bool:
         i =0 
+        count = 0 
+        if n == 0:
+            return True
+        
         while i in range(len(flowerbed)):
             if flowerbed[i] ==0:
                 prev = flowerbed[i-1] if i>0 else 0
