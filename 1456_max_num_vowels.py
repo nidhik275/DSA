@@ -10,7 +10,7 @@ class Solution:
             if s[i] in vowels:
                 count +=1
 
-        max_vowel = count 
+        max_vowel = count #if we dont initialise the max vowel with count here; we will not be able to get max vowel lenght if the first string with len k has max vowels 
         for i in range(len (s) - k):
             if s[i] in vowels:
                 count -=1
